@@ -2,10 +2,6 @@ variable "aws_region" {
   default = "us-east-1"
 }
 
-variable "aws_shared_credentials_file" {
-  default = "/c/Users/narasimha.rao/.aws/credentials"
-}
-
 variable "sns_topic_name" {
   description = "The name of the SNS Topic to send events to"
   default     = "tf-example-sns-topic"

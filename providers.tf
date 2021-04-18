@@ -4,7 +4,6 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
-  shared_credentials_file = var.aws_shared_credentials_file
 }
 
 data "aws_availability_zones" "available" {}
