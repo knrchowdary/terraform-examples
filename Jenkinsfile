@@ -10,7 +10,7 @@ pipeline {
         options {
                 timestamps ()
                 ansiColor('xterm')
-                withCredentials(awsCredentials)
+                withCredentials([aws(accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'AWS_ROOT', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')])
             }
     stages {
         stage('checkout') {
